@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class HelloScheduler {
 
     private final HelloService helloService;
-    private Logger log = LoggerFactory.getLogger(HelloScheduler.class);
+    private final Logger log = LoggerFactory.getLogger(HelloScheduler.class);
 
     public HelloScheduler(HelloService helloService) {
         this.helloService = helloService;

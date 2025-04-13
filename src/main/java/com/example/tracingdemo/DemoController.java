@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class DemoController {
 
-    private Logger log = LoggerFactory.getLogger(DemoController.class);
+    private final Logger log = LoggerFactory.getLogger(DemoController.class);
 
 
     public DemoController(Tracer tracer) {
